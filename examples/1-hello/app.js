@@ -1,11 +1,14 @@
-// domain/.netlify/functions/1-hello
-const person = {name: 'john'}
+const result = document.querySelector('.result')
 
-exports.handler = async (event, context, cb) => {
-  console.log(context);
-  return {
-    statusCode:200,
-    body: JSON.stringify(person)
+const fetchData = async () => {
+  try {
+    // const {data} = await axios.get('/.netlify/functions/1-hello')
+    const {data} = await axios.get('/api/1-hello')
+    result.textContent = data
+  } catch (error) {
+    console.log(error.response)
+    result.textContent = error.response.data
   }
-  // cb(null, {statusCode:200, body: 'Hello People'})
 }
+
+fetchData()
