@@ -1,5 +1,5 @@
 CLONING
-$ git clone https://github.com/LearnWebCode/travel-site-files.git
+$ git clone 
 $ rm -rf .git
 $ git config --global user.name "Enretro"
 $ git config --global user.email "envpogled@gmail.com"
