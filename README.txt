@@ -33,3 +33,10 @@ exports.handler = async (event, context) => {
 }
 
 #####################################
+
+VARIABLES
+
+Build & Deploy/Environment/Edit Variables
+
+AIRTABLE_API_KEY=???????????????
+
