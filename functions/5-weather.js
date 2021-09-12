@@ -6,24 +6,24 @@ const url = `http://api.openweathermap.org/data/2.5/weather?appid=${process.env.
 exports.handler = async (event, context, cb) => {
   const method = event.httpMethod
 
-  if(method !== 'POST') {
+  if (method !== 'POST') {
     return {
       statusCode: 405,
-      body: 'Only PUT Request Allowed'
+      body: 'Only POST Requests Allowed',
     }
   }
 
-  const {city} = JSON.parse(event.body)
+  const { city } = JSON.parse(event.body)
   try {
-    const response = await axios.get(`${url}${city}`)
+    const resp = await axios.get(`${url}${city}`)
     return {
       statusCode: 200,
-      body: JSON.stringify(response.data)
+      body: JSON.stringify(resp.data),
     }
   } catch (error) {
     return {
       statusCode: 404,
-      body: JSON.stringify(error)  
+      body: JSON.stringify(error),
     }
   }
 }
