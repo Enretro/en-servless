@@ -70,5 +70,24 @@ BMQDPVSsaBxLt5z@
 
 #############################
 
+NODEMAILER
+
+Name:		Ellis Hansen
+Username:	ellis.hansen29@ethereal.email (also works as a real inbound email address)
+Password:	2agCWtsXvKKUX8FPTM
+
+Nodemailer configuration
+const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    auth: {
+        user: 'ellis.hansen29@ethereal.email',
+        pass: '2agCWtsXvKKUX8FPTM'
+    }
+});
+
+
+
+
 formData(js)
 

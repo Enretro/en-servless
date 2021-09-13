@@ -42,7 +42,7 @@ exports.handler = async (event, context, cb) => {
     }
   }
   const data = {
-    from: "John Doe <learncodetutorial@gmail.com>",
+    from: "John Doe <envpogled@gmail.com>",
     to: `${name} <${email}>`,
     subject: subject,
     html: `<p>${message}</p>`
