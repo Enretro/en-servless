@@ -1,9 +1,19 @@
+#######################################
+### https://server-more.netlify.app/###
+#######################################
+
+
 CLONING
 $ git clone 
 $ rm -rf .git
 $ git config --global user.name "Enretro"
 $ git config --global user.email "envpogled@gmail.com"
 $ git init
+$ git add .
+$ git commit -m 'first commit'
+$ git remote add origin https://github.com/Enretro/en-reactserver.git
+$ git branch -M main
+$ git push -u origin main
 $ npm install
 
 $ npm run netlify
@@ -87,7 +97,17 @@ const transporter = nodemailer.createTransport({
 });
 
 
+################################################
 
+STRIPE PAYMENT
+
+envpogled@gmail.com
+enTrue
+Ahu3FLjPdXmNEkc@
+
+Payments/WEB/HTML/NODE/Custop payment flow
+
+
+############################################
 
 formData(js)
-

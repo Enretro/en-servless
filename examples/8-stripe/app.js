@@ -2,9 +2,9 @@ const purchase = [
   { id: '1', name: 't-shirt', price: 1999 },
   { id: '2', name: 'shoes', price: 4999 },
 ]
-const total_amount = 6998
+const total_amount = 10998
 const shipping_fee = 1099
-var stripe = Stripe('YOUR_PUBLIC_KEY')
+var stripe = Stripe('pk_test_51JZUFDFflWxDojVof2N7mqpqrcL0A13V45WU6fcXs5IETJ1RO1j85kk46d13vr9r780qV78FsObeCVOUahnTZuGr00ZGcQ0Kab')
 
 // The items the customer wants to buy
 
