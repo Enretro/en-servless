@@ -18,7 +18,7 @@ const fetchData = async () => {
     result.innerHTML = products
 
   } catch (error) {
-    result.innerHTML = `<h4>En error ther was. Try again please.</h4>`
+    result.innerHTML = `<h4>En napaka. Poskusi znova Prosim.</h4>`
   }
 }
 
