@@ -30,9 +30,9 @@ form.addEventListener('submit', async function (e) {
     emailInput.value = ''
     subjectInput.value = ''
     messageInput.value = ''
-    title.textContent = 'Message Sent'
+    title.textContent = 'Sporočilo Oddano'
     setTimeout(() => {
-      title.textContent = 'Send a Message'
+      title.textContent = 'Pošlji Sporočilo'
     }, 3000)
   } catch (error) {
     alert.style.display = 'block'
