@@ -35,6 +35,6 @@ async function getWeatherData(city) {
   } catch (error) {
     // console.log(error.response);
     alert.style.display = 'block'
-    alert.textContent = `Can not find weather for city : "${city}"`
+    alert.textContent = `To mesto je brez vremena : "${city}"`
   }
 }
