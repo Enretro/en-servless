@@ -38,7 +38,7 @@ exports.handler = async (event, context, cb) => {
   if (!name || !email || !subject || !message) {
     return {
       statusCode: 400,
-      body: "Please Provide All Values"
+      body: "Prosim izpolni vsa polja."
     }
   }
   const data = {
@@ -51,7 +51,7 @@ exports.handler = async (event, context, cb) => {
     await transporter.sendMail({ ...data })
     return {
       statusCode: 200,
-      body: "Success"
+      body: "Uspeh"
     }
   } catch (error) {
     return {
